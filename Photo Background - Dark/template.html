@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 7 ]><html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="resources/landingpage.css" rel="stylesheet" type="text/css" media="screen" />
+<title>Signal</title>
+</head>
+<body>
+<!-- form_custom_position -->
+  <div id="wrap">
+    <div class="bounds">
+      <div class="content">
+        <!-- header_content -->
+        <!-- form_start -->
+        <!-- data_collection -->
+        <!-- campaign_content -->
+        <!-- captcha -->
+        <!-- form_end -->
+        <!-- coupon -->
+        <!-- footer_content -->
+      </div><!-- /content -->
+    </div><!-- /bounds -->
+  </div><!-- /wrap -->
+  
+<!--[if lt IE 9]><script src="resources/css3-mediaqueries.js" type="text/javascript"></script><![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="resources/jquery.backstretch.min.js"></script>
+<script>
+/* ================================================== 
+Put your own background image in the Resources folder and change the link to it below
+Your image should be 1600-2000px wide and ideally under 300k in size
+You can optimize your image here: http://www.smushit.com/ysmush.it/
+================================================== */
+    $.backstretch("resources/colors.jpg");
+</script>
+<style type="text/css">
+/* ================================================== 
+Change the button and link colors below
+================================================== */
+	input.submit {
+		color: #fff; /* button text color */
+	 	background: #086596; /* button background */
+	}
+	input.submit:hover {
+		color: #fff;  /* button text color on hover */
+		background: #055580;  /* button backround color on hover */
+	}
+	a {
+		color: #086596; /* link text color */
+		text-decoration: none; /* link underline set to none */
+	}
+	a:hover {
+		color: #086596;  /* link text color on hover */
+		text-decoration: underline;  /* link underline: change to "none" for no underline */
+	}
+	.vote_percentage {
+		background-color: #5eb9ed !important; /* Background color for poll bar graphs */
+	}
+</style>
+
+</body>
+</html>
