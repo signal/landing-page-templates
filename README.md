@@ -19,4 +19,4 @@ Contributing
 
 Please feel free to grab any of these templates and use them as a way to jumpstart design of your own template, or just to make tweaks to one of the existing templates. If you'd like to add a template for other folks to use, feel free to fork this repo and send us a pull request with your template.
 
-Alternatively, contact us via Twitter (@signal) with a link to a template your proud of and we'll retweet it out.
+Alternatively, contact us via Twitter ([@signal](http://twitter.com/signal)) with a link to a template your proud of and we'll retweet it out.
