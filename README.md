@@ -7,9 +7,9 @@ Directory structure, required files and assets
 
 Landing page templates must adhere to the following, simple, directory structure:
 
-  my_theme/
-    template.html     (Your required template file)
-    resources/        (A directory containing any images, static html pages,
+    my_theme/
+      template.html     (Your required template file)
+      resources/        (A directory containing any images, static html pages,
                         CSS files, or other resources used by your template)
 
 A file named template.html is required to exist in your landing page template. The content in the template.html file will be displayed in all pages that use the landing page template.
