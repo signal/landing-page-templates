@@ -36,7 +36,7 @@ nav ul {list-style:none;}
 blockquote, q {quotes:none;}
 blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
 table {border-collapse:collapse; border-spacing:0;}
-hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0;}
+hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:20px 0; padding:0;}
 input, select {vertical-align:middle;}
 
 /* @end */
@@ -65,15 +65,19 @@ body {
 	padding-top: 30px;
 	}
 
-p, .campaign_content {
+p, td, li, .campaign_content {
 	font-size: 14px; font-size: 1.4rem;
 	line-height: 20px; line-height: 2.0rem;
 }
 
+span {line-height: 1.2em;}
+
 .footer_content p {
 	font-size: 12px; font-size: 1.2rem;
-	line-height: 16px; line-height: 1.6rem;	
+	line-height: 18px; line-height: 1.8rem;	
 }
+
+p, img, ul, ol, table {margin-bottom: 15px;}
 
 a {color: #ea9500; text-decoration: none;}
 a:hover {text-decoration: underline;}
@@ -87,8 +91,10 @@ em {font-style: italic;}
 	
 .no-m {margin: 0;}
 	
-.hide, .skip, hr, .closed { display: none; }
+.hide, .skip, .closed { display: none; }
 .open { display: block; }	
+
+.header_content img, .footer_content img {max-width: 100%; width: auto !important; height: auto !important;}
 
 /* @end */
 
@@ -125,6 +131,8 @@ form div.input input[type="text"] {
 
 input[type="radio"], input[type="checkbox"] {margin: 3px 8px 8px;}
 
+select {margin-right: 5px;}
+
 #terms_checkbox, .req {margin-bottom: 10px;}
 
 form input.submit {
@@ -150,7 +158,7 @@ form input.submit:hover {cursor: pointer; background: #bf7a00;}
   
 .error span, .error ul {
 	font-size: 12px; font-size: 1.2rem;
-	line-height: 14px; line-height: 1.4rem;
+	line-height: 18px; line-height: 1.8rem;
 }
 
 .error ul {
@@ -202,7 +210,9 @@ input#recaptcha_response_field {margin: 0 0 20px 0;}
 ================================================== */
 
 p.v-results {
-	font-size: 11px; font-size: 1.1rem;
+	font-size: 11px; 
+	font-size: 1.1rem;
+	margin-bottom: 15px;
 }
 
 p.v-current {
@@ -234,7 +244,7 @@ p.v-total {
 
 #vote_options {
 	font-size: 14px; font-size: 1.4rem;
-	line-height: 16px; line-height: 1.6rem;
+	line-height: 20px; line-height: 2.0rem;
 	padding: 20px;
 	background: #e3f4fd;
 	margin-bottom: 20px;
