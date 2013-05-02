@@ -1,5 +1,5 @@
 /*
-Title: Simple Photo Light Landing Page Styles
+Title: Graphite Landing Page Styles
 Media: Screen and Responsive
 */
 
@@ -35,7 +35,7 @@ nav ul {list-style:none;}
 blockquote, q {quotes:none;}
 blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
 table {border-collapse:collapse; border-spacing:0;}
-hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:20px 0; padding:0;}
+hr {display:block; height:1px; border:0; border-top:1px solid #000; margin:30px 0; padding:0;}
 input, select {vertical-align:middle;}
 
 /* @end */
@@ -45,19 +45,19 @@ input, select {vertical-align:middle;}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #fff;
-	background: #fff;
+	color: #5c595a;
+	background: #e1e2e3 url('../resources/graphite.jpg') repeat;
 }
 
-.content {
-	padding: 30px;
-	background: rgb(0, 0, 0); /* fallback color for browsers that don't support RGBA opacity */
-	background: rgba(0, 0, 0, 0.7); 
-}
+.content {padding: 30px;}
 
-.header_content {
-	margin-bottom: 30px; 
-	}
+.header_content {border-bottom: 1px solid #000;}
+
+.header_content p {
+	font-size: 18px; font-size: 1.8rem;
+	line-height: 24px; line-height: 2.4rem;
+	font-family: "Times New Roman", serif;
+}
 
 .data_collection {
 	margin-bottom: 15px;
@@ -66,7 +66,7 @@ body {
 	}
 	
 .footer_content {
-	border-top: 1px solid #e0e0e0;
+	border-top: 1px solid #000;
 	margin-top: 30px; 
 	padding-top: 30px;
 	}
@@ -81,9 +81,13 @@ span {line-height: 1.2em;}
 .footer_content p {
 	font-size: 12px; font-size: 1.2rem;
 	line-height: 18px; line-height: 1.8rem;	
+	color: #7c7c7c;
 }
 
 p, img, ul, ol, table {margin-bottom: 15px;}
+
+a {color: #0ba4c0; text-decoration: none;}
+a:hover {text-decoration: underline;}
 
 strong {font-weight: bold;}
 em {font-style: italic;}
@@ -111,10 +115,12 @@ div.label {margin-bottom: 5px;}
 div.input {margin-bottom: 15px;}
 
 div.label label {
-	font-size: 11px; font-size: 1.1rem;
-	line-height: 13px; line-height: 1.3rem;
-	text-transform: uppercase;
+	font-size: 13px; font-size: 1.3rem;
+	line-height: 15px; line-height: 1.5rem;
 	font-weight: bold;
+	color: #000;
+	background-color: #e1e2e3;
+	padding: 0 5px 4px 0;
 }
 
 div.input, div.input label {
@@ -140,7 +146,9 @@ select {margin-right: 5px;}
 #terms_checkbox, .req {margin-bottom: 10px;}
 
 form input.submit {
+	color: #fff;
 	border: none;
+ 	background: #000;
 	padding: 12px 24px;
 	font-size: 14px; font-size: 1.4rem;
 	font-weight: bold;
@@ -149,7 +157,7 @@ form input.submit {
 	margin-top: 10px;
 }
 
-form input.submit:hover {cursor: pointer;}
+form input.submit:hover {cursor: pointer; background: #0ba4c0;}
 
 .error {
 	background: #c00;
@@ -214,8 +222,10 @@ input#recaptcha_response_field {margin: 0 0 20px 0;}
 ================================================== */
 
 p.v-results {
-	font-size: 11px; font-size: 1.1rem;
+	font-size: 11px; 
+	font-size: 1.1rem;
 	margin-bottom: 15px;
+	clear: both;
 }
 
 p.v-current {
@@ -223,6 +233,7 @@ p.v-current {
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	font-size: 12px; font-size: 1.2rem;
+	color: #999;
 }
 
 p.v-total {
@@ -235,6 +246,7 @@ p.v-total {
 	font-style: italic;
 	font-size: 11px; font-size: 1.1rem;
 	margin-left: 3px;
+	color: #999;
 }
 
 .vote-so-far {
@@ -246,18 +258,19 @@ p.v-total {
 #vote_options {
 	font-size: 14px; font-size: 1.4rem;
 	line-height: 20px; line-height: 2.0rem;
-	padding: 20px;
+	padding: 20px 20px 5px 20px;
+	background: #f0f0f0;
 	margin-bottom: 20px;
-	background: #000;
-	border: 1px solid #ccc;
 }
 
 .vote_percentage {
 	margin: 5px 0 15px 0;
+	background-color: #0ba4c0 !important;
 }
 
 .v-desc {
 	font-weight: bold;
+	color: #333;
 }
 
 /* @end */
@@ -279,19 +292,18 @@ p.v-total {
 /* @group Media Queries
 ================================================== */
 
-@media screen and (min-width: 430px) {/* Styles for screens 430px wide and larger */
-	#wrap {margin: 40px;}
-	.content {
-		border-radius: 10px;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-o-border-radius: 10px; /* rounded corners */}
+@media screen and (min-width: 430px) {
+	div#recaptcha_widget {
+		background: #f2f2f2;
+		border: 1px solid #e0e0e0;
+		padding: 20px 20px 0;
+	}
 }
 
-@media screen and (min-width: 500px) { /* Fixed width at 600px wide, and two columns for form elements */
-	#wrap {width: 500px; margin: 40px auto;}
-	.content {padding: 40px;}
-	div.label {width: 48%; float: left;}
+@media screen and (min-width: 600px) { /* Fixed width at 600px, and two columns for form elements */
+	#wrap {width: 600px; margin: 60px auto;}
+	.content {padding: 0;}
+	div.label {width: 48%; float: left; border-bottom: 1px solid #c1c1c1;}
 	div.input {width: 48%; float: right;}
 }
 

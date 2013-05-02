@@ -1,5 +1,5 @@
 /*
-Title: Simple Photo Light Landing Page Styles
+Title: Stationary Landing Page Styles
 Media: Screen and Responsive
 */
 
@@ -44,31 +44,31 @@ input, select {vertical-align:middle;}
 ================================================== */
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	color: #fff;
-	background: #fff;
+	font-family: Lucida Sans, Arial, Helvetica, sans-serif;
+	color: #5c595a;
+	background: #b3d0d6 url(../resources/pattern.png) repeat;
 }
 
+#wrap {margin: 20px;}
 .content {
-	padding: 30px;
-	background: rgb(0, 0, 0); /* fallback color for browsers that don't support RGBA opacity */
-	background: rgba(0, 0, 0, 0.7); 
+	padding: 30px; 
+	background-color: #fff;
+	-moz-box-shadow:    1px 1px 3px 1px #9ab3b9;
+	-webkit-box-shadow: 1px 1px 3px 1px #9ab3b9;
+	box-shadow:         1px 1px 3px 1px #9ab3b9;
 }
-
-.header_content {
-	margin-bottom: 30px; 
-	}
+.header_content p {
+	color: #608c95;
+}
 
 .data_collection {
 	margin-bottom: 15px;
-	border-top: 1px solid #e0e0e0;
-	padding-top: 30px;
+	padding-top: 50px;
+	background: url('../resources/divider.png') no-repeat center top;
 	}
 	
 .footer_content {
-	border-top: 1px solid #e0e0e0;
-	margin-top: 30px; 
-	padding-top: 30px;
+	padding: 20px 30px 30px 30px;
 	}
 
 p, td, li, .campaign_content {
@@ -81,9 +81,17 @@ span {line-height: 1.2em;}
 .footer_content p {
 	font-size: 12px; font-size: 1.2rem;
 	line-height: 18px; line-height: 1.8rem;	
+	color: #737373;
+}
+
+.footer hr {
+	border-top:1px solid #fff;
 }
 
 p, img, ul, ol, table {margin-bottom: 15px;}
+
+a {color: #608c95; text-decoration: none;}
+a:hover {text-decoration: underline;}
 
 strong {font-weight: bold;}
 em {font-style: italic;}
@@ -111,10 +119,11 @@ div.label {margin-bottom: 5px;}
 div.input {margin-bottom: 15px;}
 
 div.label label {
-	font-size: 11px; font-size: 1.1rem;
-	line-height: 13px; line-height: 1.3rem;
-	text-transform: uppercase;
-	font-weight: bold;
+	font-size: 13px; font-size: 1.3rem;
+	line-height: 16px; line-height: 1.6rem;
+	text-transform: none;
+	font-weight: normal;
+	color: #608c95;
 }
 
 div.input, div.input label {
@@ -128,7 +137,7 @@ small, #terms_checkbox label {
 }
 
 form div.input input[type="text"] {
-	width: 98%;
+	width: 94%;
 	padding: 5px 4px;
 	border: 1px solid #d7d7d7;
 }
@@ -140,16 +149,18 @@ select {margin-right: 5px;}
 #terms_checkbox, .req {margin-bottom: 10px;}
 
 form input.submit {
+	color: #fff;
 	border: none;
+ 	background: #94bcc4;
 	padding: 12px 24px;
 	font-size: 14px; font-size: 1.4rem;
 	font-weight: bold;
 	text-align: center;
-	-webkit-appearance:none;
 	margin-top: 10px;
+	border-radius: 4px;
 }
 
-form input.submit:hover {cursor: pointer;}
+form input.submit:hover {cursor: pointer; background: #739ea7;}
 
 .error {
 	background: #c00;
@@ -214,8 +225,11 @@ input#recaptcha_response_field {margin: 0 0 20px 0;}
 ================================================== */
 
 p.v-results {
-	font-size: 11px; font-size: 1.1rem;
+	font-size: 11px; 
+	font-size: 1.1rem;
 	margin-bottom: 15px;
+	clear: both;
+	text-align: center;
 }
 
 p.v-current {
@@ -223,6 +237,7 @@ p.v-current {
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	font-size: 12px; font-size: 1.2rem;
+	color: #999;
 }
 
 p.v-total {
@@ -235,6 +250,7 @@ p.v-total {
 	font-style: italic;
 	font-size: 11px; font-size: 1.1rem;
 	margin-left: 3px;
+	color: #999;
 }
 
 .vote-so-far {
@@ -247,17 +263,18 @@ p.v-total {
 	font-size: 14px; font-size: 1.4rem;
 	line-height: 20px; line-height: 2.0rem;
 	padding: 20px;
+	background: #e9f0f2;
 	margin-bottom: 20px;
-	background: #000;
-	border: 1px solid #ccc;
 }
 
 .vote_percentage {
 	margin: 5px 0 15px 0;
+	background-color: #94bcc4 !important;
 }
 
 .v-desc {
 	font-weight: bold;
+	color: #333;
 }
 
 /* @end */
@@ -279,20 +296,29 @@ p.v-total {
 /* @group Media Queries
 ================================================== */
 
-@media screen and (min-width: 430px) {/* Styles for screens 430px wide and larger */
+@media screen and (min-width: 430px) {
 	#wrap {margin: 40px;}
-	.content {
-		border-radius: 10px;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-o-border-radius: 10px; /* rounded corners */}
+	.content {padding: 50px;}	
+	div#recaptcha_widget {
+		background: #f2f2f2;
+		border: 1px solid #e0e0e0;
+		padding: 20px 20px 0;
+	}
 }
 
-@media screen and (min-width: 500px) { /* Fixed width at 600px wide, and two columns for form elements */
-	#wrap {width: 500px; margin: 40px auto;}
-	.content {padding: 40px;}
-	div.label {width: 48%; float: left;}
-	div.input {width: 48%; float: right;}
+@media screen and (min-width: 600px) { /* Fixed width at 600px, and two columns for form elements */
+	#wrap {width: 610px; margin: 50px auto;}
+	div.label {width: 38%; float: left; text-align: right;}
+	div.input {width: 58%; float: right;}
+	.content {
+		background: url('../resources/border.png') repeat-y;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		padding: 30px 50px;
+	}
+	.border-top {background: url('../resources/border-top.png') no-repeat center top; height: 30px;}
+	.border-bottom {background: url('../resources/border-btm.png') no-repeat center top; height: 30px;}	
 }
 
 /* @end */

@@ -1,5 +1,5 @@
 /*
-Title: Simple Photo Light Landing Page Styles
+Title: Thin Mint Landing Page Styles
 Media: Screen and Responsive
 */
 
@@ -45,31 +45,28 @@ input, select {vertical-align:middle;}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #fff;
-	background: #fff;
+	color: #5c595a;
+	background: #e8e8e8;
 }
 
-.content {
-	padding: 30px;
-	background: rgb(0, 0, 0); /* fallback color for browsers that don't support RGBA opacity */
-	background: rgba(0, 0, 0, 0.7); 
+.content {padding: 30px;border: 5px solid #d7d7d7; background: #fff;
 }
 
-.header_content {
-	margin-bottom: 30px; 
-	}
+.header_content {border-bottom: 4px solid #74be8f;}
+
+.header_content p {
+	color: #74be90;
+	font-size: 16px; font-size: 1.6rem;
+	line-height: 20px; line-height: 2.0rem;	
+}
 
 .data_collection {
 	margin-bottom: 15px;
-	border-top: 1px solid #e0e0e0;
+	border-top: 4px solid #d7d7d7;
 	padding-top: 30px;
 	}
 	
-.footer_content {
-	border-top: 1px solid #e0e0e0;
-	margin-top: 30px; 
-	padding-top: 30px;
-	}
+.footer_content {padding: 30px;}
 
 p, td, li, .campaign_content {
 	font-size: 14px; font-size: 1.4rem;
@@ -79,11 +76,15 @@ p, td, li, .campaign_content {
 span {line-height: 1.2em;}
 
 .footer_content p {
-	font-size: 12px; font-size: 1.2rem;
-	line-height: 18px; line-height: 1.8rem;	
+	font-size: 11px; font-size: 1.1rem;
+	line-height: 16px; line-height: 1.6rem;	
+	color: #7c7c7c;
 }
 
 p, img, ul, ol, table {margin-bottom: 15px;}
+
+a {color: #4f9268; text-decoration: none;}
+a:hover {text-decoration: underline;}
 
 strong {font-weight: bold;}
 em {font-style: italic;}
@@ -106,20 +107,21 @@ table {width: 100% !important;}
 /* @group Form Elements
 ================================================== */
 
-div.label {margin-bottom: 5px;}
+div.label {margin-bottom: 5px; background: #e9fbf0; padding: 6px; width: 97%;}
 
 div.input {margin-bottom: 15px;}
 
 div.label label {
-	font-size: 11px; font-size: 1.1rem;
-	line-height: 13px; line-height: 1.3rem;
-	text-transform: uppercase;
+	font-size: 13px; font-size: 1.3rem;
+	line-height: 16px; line-height: 1.6rem;
 	font-weight: bold;
+	color: #74be8f;
 }
 
 div.input, div.input label {
-	font-size: 12px; font-size: 1.2rem;
-	line-height: 14px; line-height: 1.4rem;
+	font-size: 13px; font-size: 1.3rem;
+	line-height: 16px; line-height: 1.6rem;
+	text-transform: none;
 }
 
 small, #terms_checkbox label {
@@ -129,8 +131,9 @@ small, #terms_checkbox label {
 
 form div.input input[type="text"] {
 	width: 98%;
-	padding: 5px 4px;
+	padding: 6px 4px;
 	border: 1px solid #d7d7d7;
+	margin-top: 0;
 }
 
 input[type="radio"], input[type="checkbox"] {margin: 3px 8px 8px;}
@@ -140,22 +143,23 @@ select {margin-right: 5px;}
 #terms_checkbox, .req {margin-bottom: 10px;}
 
 form input.submit {
+	color: #fff;
 	border: none;
+ 	background: #74be90;
 	padding: 12px 24px;
 	font-size: 14px; font-size: 1.4rem;
 	font-weight: bold;
 	text-align: center;
-	-webkit-appearance:none;
 	margin-top: 10px;
+	border-radius: 4px;
 }
 
-form input.submit:hover {cursor: pointer;}
+form input.submit:hover {cursor: pointer; background: #5fa57a;}
 
 .error {
-	background: #c00;
+	background: #3a975d;
 	padding: 15px;
 	color: #fff;
-	margin-bottom: 20px;
   }
   
 .error span, .error ul {
@@ -214,7 +218,8 @@ input#recaptcha_response_field {margin: 0 0 20px 0;}
 ================================================== */
 
 p.v-results {
-	font-size: 11px; font-size: 1.1rem;
+	font-size: 11px; 
+	font-size: 1.1rem;
 	margin-bottom: 15px;
 }
 
@@ -223,6 +228,7 @@ p.v-current {
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	font-size: 12px; font-size: 1.2rem;
+	color: #999;
 }
 
 p.v-total {
@@ -235,6 +241,7 @@ p.v-total {
 	font-style: italic;
 	font-size: 11px; font-size: 1.1rem;
 	margin-left: 3px;
+	color: #999;
 }
 
 .vote-so-far {
@@ -247,17 +254,18 @@ p.v-total {
 	font-size: 14px; font-size: 1.4rem;
 	line-height: 20px; line-height: 2.0rem;
 	padding: 20px;
+	background: #f1f1f1;
 	margin-bottom: 20px;
-	background: #000;
-	border: 1px solid #ccc;
 }
 
 .vote_percentage {
 	margin: 5px 0 15px 0;
+	background-color: #74be90 !important;
 }
 
 .v-desc {
 	font-weight: bold;
+	color: #333;
 }
 
 /* @end */
@@ -279,18 +287,18 @@ p.v-total {
 /* @group Media Queries
 ================================================== */
 
-@media screen and (min-width: 430px) {/* Styles for screens 430px wide and larger */
-	#wrap {margin: 40px;}
-	.content {
-		border-radius: 10px;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-o-border-radius: 10px; /* rounded corners */}
+@media screen and (min-width: 430px) {
+	body {border-top: 7px solid #74be90;}
+	#wrap {margin: 40px;}	
+	div#recaptcha_widget {
+		background: #f2f2f2;
+		border: 1px solid #e0e0e0;
+		padding: 20px 20px 0;
+	}
 }
 
-@media screen and (min-width: 500px) { /* Fixed width at 600px wide, and two columns for form elements */
-	#wrap {width: 500px; margin: 40px auto;}
-	.content {padding: 40px;}
+@media screen and (min-width: 600px) { /* Fixed width at 600px, and two columns for form elements */
+	#wrap {width: 600px; margin: 50px auto;}
 	div.label {width: 48%; float: left;}
 	div.input {width: 48%; float: right;}
 }

@@ -1,5 +1,5 @@
 /*
-Title: Simple Photo Light Landing Page Styles
+Title: Electric Landing Page Styles
 Media: Screen and Responsive
 */
 
@@ -45,15 +45,12 @@ input, select {vertical-align:middle;}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #fff;
-	background: #fff;
+	color: #5c595a;
+	background: #292929;
+	border-top: 10px solid #3194b4;
 }
 
-.content {
-	padding: 30px;
-	background: rgb(0, 0, 0); /* fallback color for browsers that don't support RGBA opacity */
-	background: rgba(0, 0, 0, 0.7); 
-}
+.content {background: #fff; padding: 30px;}
 
 .header_content {
 	margin-bottom: 30px; 
@@ -64,11 +61,11 @@ body {
 	border-top: 1px solid #e0e0e0;
 	padding-top: 30px;
 	}
-	
+
 .footer_content {
-	border-top: 1px solid #e0e0e0;
-	margin-top: 30px; 
-	padding-top: 30px;
+	border-top: 1px solid #cccccc;
+	margin-top: 20px; 
+	padding-top: 20px;
 	}
 
 p, td, li, .campaign_content {
@@ -80,10 +77,14 @@ span {line-height: 1.2em;}
 
 .footer_content p {
 	font-size: 12px; font-size: 1.2rem;
-	line-height: 18px; line-height: 1.8rem;	
+	line-height: 16px; line-height: 1.6rem;	
+	color: #676767;
 }
 
 p, img, ul, ol, table {margin-bottom: 15px;}
+
+a {color: #28809c; text-decoration: none;}
+a:hover {text-decoration: underline;}
 
 strong {font-weight: bold;}
 em {font-style: italic;}
@@ -115,6 +116,7 @@ div.label label {
 	line-height: 13px; line-height: 1.3rem;
 	text-transform: uppercase;
 	font-weight: bold;
+	color: #28809c;
 }
 
 div.input, div.input label {
@@ -140,7 +142,9 @@ select {margin-right: 5px;}
 #terms_checkbox, .req {margin-bottom: 10px;}
 
 form input.submit {
+	color: #fff;
 	border: none;
+ 	background: #28809c;
 	padding: 12px 24px;
 	font-size: 14px; font-size: 1.4rem;
 	font-weight: bold;
@@ -149,7 +153,7 @@ form input.submit {
 	margin-top: 10px;
 }
 
-form input.submit:hover {cursor: pointer;}
+form input.submit:hover {cursor: pointer; background: #145e76;}
 
 .error {
 	background: #c00;
@@ -214,7 +218,8 @@ input#recaptcha_response_field {margin: 0 0 20px 0;}
 ================================================== */
 
 p.v-results {
-	font-size: 11px; font-size: 1.1rem;
+	font-size: 11px; 
+	font-size: 1.1rem;
 	margin-bottom: 15px;
 }
 
@@ -223,6 +228,7 @@ p.v-current {
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	font-size: 12px; font-size: 1.2rem;
+	color: #999;
 }
 
 p.v-total {
@@ -235,6 +241,7 @@ p.v-total {
 	font-style: italic;
 	font-size: 11px; font-size: 1.1rem;
 	margin-left: 3px;
+	color: #999;
 }
 
 .vote-so-far {
@@ -247,17 +254,18 @@ p.v-total {
 	font-size: 14px; font-size: 1.4rem;
 	line-height: 20px; line-height: 2.0rem;
 	padding: 20px;
+	background: #e3f4fd;
 	margin-bottom: 20px;
-	background: #000;
-	border: 1px solid #ccc;
 }
 
 .vote_percentage {
 	margin: 5px 0 15px 0;
+	background-color: #5eb9ed !important;
 }
 
 .v-desc {
 	font-weight: bold;
+	color: #333;
 }
 
 /* @end */
@@ -279,18 +287,18 @@ p.v-total {
 /* @group Media Queries
 ================================================== */
 
-@media screen and (min-width: 430px) {/* Styles for screens 430px wide and larger */
-	#wrap {margin: 40px;}
-	.content {
-		border-radius: 10px;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-o-border-radius: 10px; /* rounded corners */}
+@media screen and (min-width: 430px) {
+	#wrap {border: 1px solid #e0e0e0; margin: 40px;}
+	.content {padding: 40px;}	
+	div#recaptcha_widget {
+		background: #f2f2f2;
+		border: 1px solid #e0e0e0;
+		padding: 20px 20px 0;
+	}
 }
 
-@media screen and (min-width: 500px) { /* Fixed width at 600px wide, and two columns for form elements */
-	#wrap {width: 500px; margin: 40px auto;}
-	.content {padding: 40px;}
+@media screen and (min-width: 600px) { /* Fixed width at 600px, and two columns for form elements */
+	#wrap {width: 600px; margin: 50px auto;}
 	div.label {width: 48%; float: left;}
 	div.input {width: 48%; float: right;}
 }

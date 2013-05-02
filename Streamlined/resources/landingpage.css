@@ -96,6 +96,8 @@ em {font-style: italic;}
 
 .header_content img, .footer_content img {max-width: 100%; width: auto !important; height: auto !important;}
 
+table {width: 100% !important;}
+
 /* @end */
 
 /* @group Form Elements
