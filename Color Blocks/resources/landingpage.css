@@ -1,5 +1,5 @@
 /*
-Title: Simple Photo Dark Landing Page Styles
+Title: Color Blocks Landing Page Styles
 Media: Screen and Responsive
 */
 
@@ -13,6 +13,7 @@ Media: Screen and Responsive
 	# Polls
 	# Clear Fix
 	# Media Queries
+	# Browser Hacks
 */
 
 /* @group Reset Styles
@@ -45,27 +46,26 @@ input, select {vertical-align:middle;}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #5c595a;
-	background: #000;
+	color: #000;
+	border-top: 10px solid #884567;
+	padding: 20px;
+	background: #dedede url('../resources/honeycomb.gif') repeat; 
 }
 
-.content {
-	padding: 30px;
-	background: #fff;
-}
+.content {color: #fff; background: #4ca4bd;}
 
-.header_content {
-	margin-bottom: 30px; 
-	}
+.content hr {border-top: 1px solid #fff;}
 
-.data_collection {
-	margin-bottom: 15px;
-	border-top: 1px solid #e0e0e0;
-	padding-top: 30px;
-	}
+.header_content {margin-bottom: 30px; }
+
+.data_collection {margin-bottom: 15px;}
+	
+.sidecol {background: #fff;}	
+
+.padding {padding: 30px;}
 	
 .footer_content {
-	border-top: 1px solid #e0e0e0;
+	border-top: 1px solid #fff;
 	margin-top: 30px; 
 	padding-top: 30px;
 	}
@@ -79,10 +79,15 @@ span {line-height: 1.2em;}
 
 .footer_content p {
 	font-size: 12px; font-size: 1.2rem;
-	line-height: 18px; line-height: 1.8rem;
+	line-height: 18px; line-height: 1.8rem;	
 }
 
 p, img, ul, ol, table {margin-bottom: 15px;}
+
+a {color: #884567; text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+.content a {color: #fff; text-decoration: underline;}
 
 strong {font-weight: bold;}
 em {font-style: italic;}
@@ -113,15 +118,16 @@ div.label {margin-bottom: 5px;}
 div.input {margin-bottom: 15px;}
 
 div.label label {
-	font-size: 11px; font-size: 1.1rem;
-	line-height: 13px; line-height: 1.3rem;
-	text-transform: uppercase;
+	font-size: 12px; font-size: 1.2rem;
+	line-height: 15px; line-height: 1.5rem;
 	font-weight: bold;
+	color: #884567;
 }
 
 div.input, div.input label {
 	font-size: 12px; font-size: 1.2rem;
 	line-height: 14px; line-height: 1.4rem;
+	color: #000000;
 }
 
 small, #terms_checkbox label {
@@ -142,7 +148,9 @@ select {margin-right: 5px;}
 #terms_checkbox, .req {margin-bottom: 10px;}
 
 form input.submit {
+	color: #fff;
 	border: none;
+ 	background: #884567;
 	padding: 12px 24px;
 	font-size: 14px; font-size: 1.4rem;
 	font-weight: bold;
@@ -151,7 +159,7 @@ form input.submit {
 	margin-top: 10px;
 }
 
-form input.submit:hover {cursor: pointer;}
+form input.submit:hover {cursor: pointer; background: #662e4a;}
 
 .error {
 	background: #c00;
@@ -170,9 +178,7 @@ form input.submit:hover {cursor: pointer;}
 	margin-left: 15px;
   }
   
-.error ul li {
-	margin: 0 0 4px 0;
-}  
+.error ul li {margin: 0 0 4px 0;}  
 
 /* @end */
 
@@ -206,7 +212,7 @@ div#recaptcha_image {
 	background: #fff;
 } 
 
-div#recaptcha_image, div#recaptcha_image img {width: 240px !important; height: auto;}
+div#recaptcha_image, div#recaptcha_image img {width: 225px !important; height: auto;}
 
 input#recaptcha_response_field {margin: 0 0 20px 0;}
 
@@ -226,7 +232,7 @@ p.v-current {
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	font-size: 12px; font-size: 1.2rem;
-	color: #333;
+	color: #999;
 }
 
 p.v-total {
@@ -244,7 +250,7 @@ p.v-total {
 
 .vote-so-far {
 	padding: 20px;
-	background: #e3f4fd;
+	background: #e3f5fa;
 	margin-bottom: 20px;
 }
 
@@ -252,18 +258,13 @@ p.v-total {
 	font-size: 14px; font-size: 1.4rem;
 	line-height: 20px; line-height: 2.0rem;
 	padding: 20px;
-	background: #e3f4fd;
+	background: #e3f5fa;
 	margin-bottom: 20px;
 }
 
-.vote_percentage {
-	margin: 5px 0 15px 0;
-}
+.vote_percentage {margin: 5px 0 15px 0; background-color: #4ca4bd !important;}
 
-.v-desc {
-	font-weight: bold;
-	color: #333;
-}
+.v-desc {font-weight: bold; color: #333;}
 
 /* @end */
 
@@ -284,24 +285,17 @@ p.v-total {
 /* @group Media Queries
 ================================================== */
 
-@media screen and (min-width: 430px) {/* Styles for screens 430px wide and larger */
-	#wrap {margin: 40px;}
-	.content {
-		border-radius: 10px;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-o-border-radius: 10px; /* rounded corners */}
-	div#recaptcha_widget {
-		background: #f2f2f2;
-		border: 1px solid #e0e0e0;
-		padding: 20px 20px 0;}
+@media screen and (min-width: 600px) { /* Fixed width at 600px, and two columns for form elements */
+	body {padding-top: 45px;}
+	#wrap {width: 600px; margin: 0 auto;}
+	.content {width: 50%; float: left;}
+	.sidecol {width: 50%; float: right;}
 }
 
-@media screen and (min-width: 500px) { /* Fixed width at 600px wide, and two columns for form elements */
-	#wrap {width: 500px; margin: 40px auto;}
-	.content {padding: 40px;}
-	div.label {width: 48%; float: left;}
-	div.input {width: 48%; float: right;}
-}
+/* @end */
+
+/* @group Browser Hacks
+================================================== */
+
 
 /* @end */

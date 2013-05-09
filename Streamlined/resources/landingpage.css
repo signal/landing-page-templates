@@ -98,6 +98,9 @@ em {font-style: italic;}
 
 table {width: 100% !important;}
 
+#subscription_checkboxes {margin-bottom: 20px;}
+#subscription_checkboxes label {font-size: 12px; font-size: 1.2rem; line-height: 18px; line-height: 1.8rem;}
+
 /* @end */
 
 /* @group Form Elements
