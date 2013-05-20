@@ -46,6 +46,7 @@ input, select {vertical-align:middle;}
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #5c595a;
+	background: #fff;
 }
 
 .content {padding: 30px;}
