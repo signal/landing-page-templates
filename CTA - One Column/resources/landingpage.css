@@ -14,6 +14,7 @@ Media: Screen and Responsive
 	# Add This
 	# Clear Fix
 	# Media Queries
+	# Browser Fixes
 */
 
 /* @group Reset Styles
@@ -52,7 +53,7 @@ body {
 
 .header {
 	background: #fff;
-	padding: 50px 0;
+	padding: 50px 0 30px 0;
 	text-align: center;
 }
 .form {
@@ -196,9 +197,8 @@ form input.submit:hover {cursor: pointer; background: #026c88;}
 ================================================== */
 
 div#recaptcha_widget {
-	border-top: 1px solid #e0e0e0;
-	border-bottom: 1px solid #e0e0e0;
-	padding: 20px 0 0 0;
+	background: #49d2f5;
+	padding: 20px 20px 0 20px;
 	margin-bottom: 20px;
 }
 
@@ -326,12 +326,6 @@ p.v-total {
 		width: 400px;
 		padding: 0;
 	}
-
-	div#recaptcha_widget {
-		background: #f2f2f2;
-		border: 1px solid #e0e0e0;
-		padding: 20px 20px 0;
-	}
 }
 
 @media screen and (min-width: 500px) { /* Fixed width at 500px, and two columns for form elements */
@@ -342,5 +336,12 @@ p.v-total {
 	div.label {width: 48%; float: left;}
 	div.input {width: 48%; float: right;}
 }
+
+/* @end */
+
+/* @group Browser Fixes
+================================================== */
+
+html.ie7 img, html.ie8 img {width: auto !important;}
 
 /* @end */

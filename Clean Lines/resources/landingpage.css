@@ -320,5 +320,6 @@ p.v-total {
 
 html.ie7 .footer_content, html.ie6 .footer_content {padding-top: 0;}
 html.ie7 .footer_content p, html.ie6 .footer_content p {padding-top: 30px;}
+html.ie7 img, html.ie8 img {width: auto !important;}
 
 /* @end */

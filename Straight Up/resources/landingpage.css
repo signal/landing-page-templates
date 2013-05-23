@@ -13,6 +13,7 @@ Media: Screen and Responsive
 	# Polls
 	# Clear Fix
 	# Media Queries
+	# Browser Fixes
 */
 
 /* @group Reset Styles
@@ -325,5 +326,12 @@ p.v-total {
 	div.label label {margin-left: 80px;}
 	p.v-results {padding: 0 40px;}
 }
+
+/* @end */
+
+/* @group Browser Fixes
+================================================== */
+
+html.ie7 img, html.ie8 img {width: auto !important;}
 
 /* @end */

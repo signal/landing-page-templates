@@ -13,6 +13,7 @@ Media: Screen and Responsive
 	# Polls
 	# Clear Fix
 	# Media Queries
+	# Browser Fixes
 */
 
 /* @group Reset Styles
@@ -313,5 +314,12 @@ p.v-total {
 	div.input {width: 60%; float: right;}
 	form div.input input[type="text"] {width: 80%;}
 }
+
+/* @end */
+
+/* @group Browser Fixes
+================================================== */
+
+html.ie7 img, html.ie8 img {width: auto !important;}
 
 /* @end */

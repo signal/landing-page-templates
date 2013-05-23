@@ -13,6 +13,7 @@ Media: Screen and Responsive
 	# Polls
 	# Clear Fix
 	# Media Queries
+	# Browser Fixes
 */
 
 /* @group Reset Styles
@@ -307,5 +308,12 @@ p.v-total {
 	div.label {width: 48%; float: left;}
 	div.input {width: 48%; float: right;}
 }
+
+/* @end */
+
+/* @group Browser Fixes
+================================================== */
+
+html.ie7 img, html.ie8 img {width: auto !important;}
 
 /* @end */

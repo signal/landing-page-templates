@@ -13,7 +13,7 @@ Media: Screen and Responsive
 	# Polls
 	# Clear Fix
 	# Media Queries
-	# Browser Hacks
+	# Browser Fixes
 */
 
 /* @group Reset Styles
@@ -288,8 +288,9 @@ p.v-total {
 
 /* @end */
 
-/* @group Browser Hacks
+/* @group Browser Fixes
 ================================================== */
 
+html.ie7 img, html.ie8 img {width: auto !important;}
 
 /* @end */

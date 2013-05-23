@@ -13,6 +13,7 @@ Media: Screen and Responsive
 	# Polls
 	# Clear Fix
 	# Media Queries
+	# Browser Fixes
 */
 
 /* @group Reset Styles
@@ -320,5 +321,12 @@ p.v-total {
 	}
 	.border-bottom {background: url('../resources/border-btm.png') no-repeat center top; height: 30px;}	
 }
+
+/* @end */
+
+/* @group Browser Fixes
+================================================== */
+
+html.ie7 img, html.ie8 img {width: auto !important;}
 
 /* @end */

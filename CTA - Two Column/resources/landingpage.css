@@ -1,5 +1,5 @@
 /*
-Title: Graphite Landing Page Styles
+Title: CTA Two Column Landing Page Styles
 Media: Screen and Responsive
 */
 
@@ -11,6 +11,7 @@ Media: Screen and Responsive
 	# Form Elements
 	# CAPTCHA
 	# Polls
+	# Add This
 	# Clear Fix
 	# Media Queries
 	# Browser Fixes
@@ -36,7 +37,7 @@ nav ul {list-style:none;}
 blockquote, q {quotes:none;}
 blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
 table {border-collapse:collapse; border-spacing:0;}
-hr {display:block; height:1px; border:0; border-top:1px solid #000; margin:30px 0; padding:0;}
+hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:20px 0; padding:0;}
 input, select {vertical-align:middle;}
 
 /* @end */
@@ -46,35 +47,34 @@ input, select {vertical-align:middle;}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #5c595a;
-	background: #e1e2e3 url('../resources/graphite.jpg') repeat;
+	color: #1e1e1e;
+	padding: 60px 0 30px 0;
+	background: #f8fbfd url('../resources/back.jpg') repeat-x; 
 }
 
-.content {padding: 30px;}
-
-.header_content {border-bottom: 1px solid #000;}
-
-.header_content p {
-	font-size: 18px; font-size: 1.8rem;
-	line-height: 24px; line-height: 2.4rem;
-	font-family: "Times New Roman", serif;
+.content, .sidecol {
+	padding: 0 30px;
 }
 
-.data_collection {
-	margin-bottom: 15px;
-	border-top: 1px solid #e0e0e0;
-	padding-top: 30px;
-	}
-	
-.footer_content {
-	border-top: 1px solid #000;
-	margin-top: 30px; 
-	padding-top: 30px;
-	}
+.form {
+	background: #f8f8f8;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	-webkit-box-shadow:  1px 1px 3px 1px rgba(0, 0, 0, .23);
+	box-shadow:  1px 1px 3px 1px rgba(0, 0, 0, .23);
+}
+
+.form .padding {
+	padding: 30px 20px;
+}
+
+.content hr {border-top: 1px solid #fff;}
+
+.data_collection {margin-bottom: 15px;}
 
 p, td, li, .campaign_content {
-	font-size: 14px; font-size: 1.4rem;
-	line-height: 20px; line-height: 2.0rem;
+	font-size: 15px; font-size: 1.5rem;
+	line-height: 22px; line-height: 2.2rem;
 }
 
 span {line-height: 1.2em;}
@@ -82,12 +82,12 @@ span {line-height: 1.2em;}
 .footer_content p {
 	font-size: 12px; font-size: 1.2rem;
 	line-height: 18px; line-height: 1.8rem;	
-	color: #7c7c7c;
+	color: #4c4c4c;
 }
 
-p, img, ul, ol, table {margin-bottom: 15px;}
+p, ul, ol, table {margin-bottom: 25px;}
 
-a {color: #0ba4c0; text-decoration: none;}
+a {color: #017390; text-decoration: none;}
 a:hover {text-decoration: underline;}
 
 strong {font-weight: bold;}
@@ -119,17 +119,15 @@ div.label {margin-bottom: 5px;}
 div.input {margin-bottom: 15px;}
 
 div.label label {
-	font-size: 13px; font-size: 1.3rem;
+	font-size: 12px; font-size: 1.2rem;
 	line-height: 15px; line-height: 1.5rem;
-	font-weight: bold;
-	color: #000;
-	background-color: #e1e2e3;
-	padding: 0 5px 4px 0;
+	color: #6b6b6b;
 }
 
 div.input, div.input label {
 	font-size: 12px; font-size: 1.2rem;
 	line-height: 14px; line-height: 1.4rem;
+	color: #6b6b6b;
 }
 
 small, #terms_checkbox label {
@@ -152,7 +150,8 @@ select {margin-right: 5px;}
 form input.submit {
 	color: #fff;
 	border: none;
- 	background: #000;
+ 	background: #1f8fac;
+ 	width: 100%;
 	padding: 12px 24px;
 	font-size: 14px; font-size: 1.4rem;
 	font-weight: bold;
@@ -161,7 +160,7 @@ form input.submit {
 	margin-top: 10px;
 }
 
-form input.submit:hover {cursor: pointer; background: #0ba4c0;}
+form input.submit:hover {cursor: pointer; background: #11758f;}
 
 .error {
 	background: #c00;
@@ -180,9 +179,7 @@ form input.submit:hover {cursor: pointer; background: #0ba4c0;}
 	margin-left: 15px;
   }
   
-.error ul li {
-	margin: 0 0 4px 0;
-}  
+.error ul li {margin: 0 0 4px 0;}  
 
 /* @end */
 
@@ -216,7 +213,7 @@ div#recaptcha_image {
 	background: #fff;
 } 
 
-div#recaptcha_image, div#recaptcha_image img {width: 240px !important; height: auto;}
+div#recaptcha_image, div#recaptcha_image img {width: 225px !important; height: auto;}
 
 input#recaptcha_response_field {margin: 0 0 20px 0;}
 
@@ -229,7 +226,6 @@ p.v-results {
 	font-size: 11px; 
 	font-size: 1.1rem;
 	margin-bottom: 15px;
-	clear: both;
 }
 
 p.v-current {
@@ -255,29 +251,37 @@ p.v-total {
 
 .vote-so-far {
 	padding: 20px;
-	background: #e3f4fd;
+	background: #e3f5fa;
 	margin-bottom: 20px;
 }
 
 #vote_options {
 	font-size: 14px; font-size: 1.4rem;
 	line-height: 20px; line-height: 2.0rem;
-	padding: 20px 20px 5px 20px;
-	background: #f0f0f0;
+	padding: 20px;
+	background: #e3f5fa;
 	margin-bottom: 20px;
 }
 
-.vote_percentage {
-	margin: 5px 0 15px 0;
-	background-color: #0ba4c0 !important;
-}
+.vote_percentage {margin: 5px 0 15px 0; background-color: #4ca4bd !important;}
 
-.v-desc {
-	font-weight: bold;
-	color: #333;
-}
+.v-desc {font-weight: bold; color: #333;}
 
 /* @end */
+
+/* @group Add This
+================================================== */
+
+.addthis_toolbox div.sharetext {
+	float: left;
+	padding: 0 5px 3px 0;
+	font-size: 12px; font-size: 1.2rem;
+	line-height: 16px; line-height: 1.6rem;	
+	font-weight: bold;
+	color: #777676;
+	margin-bottom: 30px;
+	
+}
 
 /* @group Clear Fix
 ================================================== */
@@ -296,19 +300,11 @@ p.v-total {
 /* @group Media Queries
 ================================================== */
 
-@media screen and (min-width: 430px) {
-	div#recaptcha_widget {
-		background: #f2f2f2;
-		border: 1px solid #e0e0e0;
-		padding: 20px 20px 0;
-	}
-}
-
-@media screen and (min-width: 600px) { /* Fixed width at 600px, and two columns for form elements */
-	#wrap {width: 600px; margin: 60px auto;}
-	.content {padding: 0;}
-	div.label {width: 48%; float: left; border-bottom: 1px solid #c1c1c1;}
-	div.input {width: 48%; float: right;}
+@media screen and (min-width: 800px) { /* Fixed width at 800px, and two columns for form elements */
+	body {padding: 80px 0 30px 0;}
+	#wrap {width: 800px; margin: 0 auto;}
+	.content {width: 430px;  float: left; padding: 0;}
+	.sidecol {width: 310px; float: right; padding: 0; margin-top: 80px;}
 }
 
 /* @end */
