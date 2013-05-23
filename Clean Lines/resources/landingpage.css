@@ -56,7 +56,7 @@ body {
 .content {padding: 30px;}
 
 .header_content {
-	margin-bottom: 30px; 
+	margin-bottom: 15px; 
 	}
 
 .data_collection {
@@ -144,7 +144,7 @@ form div.input input[type="text"] {
 	border: 1px solid #d7d7d7;
 }
 
-input[type="radio"], input[type="checkbox"] {margin: 3px 8px 8px;}
+input[type="radio"], input[type="checkbox"] {margin: 3px 4px 8px 0;}
 
 select {margin-right: 5px;}
 
@@ -184,7 +184,6 @@ form input.submit:hover {cursor: pointer; background: #000;}
 .error ul li {
 	margin: 0 0 4px 0;
 }  
-
 
 /* @end */
 

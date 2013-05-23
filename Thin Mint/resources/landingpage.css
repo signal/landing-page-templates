@@ -52,7 +52,7 @@ body {
 .content {padding: 30px;border: 5px solid #d7d7d7; background: #fff;
 }
 
-.header_content {border-bottom: 4px solid #74be8f;}
+.header_content {border-bottom: 4px solid #74be8f; padding-bottom: 10px;}
 
 .header_content p {
 	color: #74be90;
@@ -139,7 +139,7 @@ form div.input input[type="text"] {
 	margin-top: 0;
 }
 
-input[type="radio"], input[type="checkbox"] {margin: 3px 8px 8px;}
+input[type="radio"], input[type="checkbox"] {margin: 3px 4px 8px 0;}
 
 select {margin-right: 5px;}
 
@@ -178,6 +178,7 @@ form input.submit:hover {cursor: pointer; background: #5fa57a;}
 .error ul li {
 	margin: 0 0 4px 0;
 }  
+
 
 /* @end */
 

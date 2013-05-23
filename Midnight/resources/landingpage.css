@@ -56,7 +56,7 @@ body {
 }
 
 .header_content {
-	margin-bottom: 30px; 
+	margin-bottom: 15px; 
 	}
 
 .data_collection {
@@ -144,7 +144,7 @@ form div.input input[type="text"] {
 	border-left: 2px solid #743049;
 }
 
-input[type="radio"], input[type="checkbox"] {margin: 3px 8px 8px;}
+input[type="radio"], input[type="checkbox"] {margin: 3px 4px 8px 0;}
 
 select {margin-right: 5px;}
 
@@ -184,7 +184,7 @@ form input.submit:hover {cursor: pointer; background: #581d33;}
 .error ul li {
 	margin: 0 0 4px 0;
 }  
-
+	
 /* @end */
 
 /* @group CAPTCHA

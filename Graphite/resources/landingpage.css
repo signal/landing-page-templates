@@ -142,7 +142,7 @@ form div.input input[type="text"] {
 	border: 1px solid #d7d7d7;
 }
 
-input[type="radio"], input[type="checkbox"] {margin: 3px 8px 8px;}
+input[type="radio"], input[type="checkbox"] {margin: 3px 4px 8px 0;}
 
 select {margin-right: 5px;}
 
