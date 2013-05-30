@@ -5,56 +5,22 @@ Media: Screen and Responsive
 
 /* Table of Contents
 ==================================================
-	# Reset Styles
-	# General Layout
 	# General Styles
 	# Form Elements
-	# CAPTCHA
 	# Polls
-	# Clear Fix
 	# Media Queries
-	# Browser Fixes
 */
 
-/* @group Reset Styles
-================================================== */
-/* 
-html5doctor.com Reset Stylesheet v1.6.1
-Author: Richard Clark - http://richclarkdesign.com 
-*/
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video 
-	{margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}
-html {
-	font-size: 62.5%; /* Font sizing with rems: http://snook.ca/archives/html_and_css/font-size-with-rem */
-	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
-	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-}
-body {line-height:1;}
-article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section { display:block;}
-nav ul {list-style:none;}
-blockquote, q {quotes:none;}
-blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
-table {border-collapse:collapse; border-spacing:0;}
-hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:20px 0; padding:0;}
-input, select {vertical-align:middle;}
-
-/* @end */
+@import url("http://app.signalhq.com/assets/universal-styles.css");
 
 /* @group General Styles
 ================================================== */
 
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	color: #5c595a;
-	background: #f4ece2;
-}
+body {background: #f4ece2;}
 
 .content {background: #fff url('arrow.png') no-repeat right top; padding: 57px 30px 30px 30px;}
 
-.header_content {
-	margin-bottom: 15px; 
-	}
+.header_content {margin-bottom: 15px;}
 
 .data_collection {
 	margin-bottom: 15px;
@@ -68,52 +34,14 @@ body {
 	color: #fff;
 	}
 
-p, td, li, .campaign_content {
-	font-size: 14px; font-size: 1.4rem;
-	line-height: 20px; line-height: 2.0rem;
-}
+a {color: #126e98;}
 
-span {line-height: 1.2em;}
-
-.footer_content p {
-	font-size: 12px; font-size: 1.2rem;
-	line-height: 16px; line-height: 1.6rem;	
-}
-
-p, img, ul, ol, table {margin-bottom: 15px;}
-
-a {color: #126e98; text-decoration: none;}
-a:hover {text-decoration: underline;}
-
-.footer_content a {color: #fff;}
-
-strong {font-weight: bold;}
-em {font-style: italic;}
-
-.alignleft { float:left; margin: 2px 10px 2px 0;}
-.alignright { float:right; margin: 2px 0 2px 10px;}
-.aligncenter {display: block; margin: 0 auto 20px; text-align: center;}
-	
-.no-m {margin: 0;}
-	
-.hide, .skip, .closed { display: none; }
-.open { display: block; }	
-
-.header_content img, .footer_content img {max-width: 100%; height: auto !important;}
-
-table {width: 100% !important;}
-
-#subscription_checkboxes {margin-bottom: 20px;}
-#subscription_checkboxes label {font-size: 12px; font-size: 1.2rem; line-height: 18px; line-height: 1.8rem;}
+.footer_content a {color: #fff;}	
 
 /* @end */
 
 /* @group Form Elements
 ================================================== */
-
-div.label {margin-bottom: 5px;}
-
-div.input {margin-bottom: 15px;}
 
 div.label label {
 	font-size: 11px; font-size: 1.1rem;
@@ -123,168 +51,15 @@ div.label label {
 	color: #126e98;
 }
 
-div.input, div.input label {
-	font-size: 12px; font-size: 1.2rem;
-	line-height: 14px; line-height: 1.4rem;
-}
-
-small, #terms_checkbox label {
-	font-size: 11px; font-size: 1.1rem;
-	line-height: 13px; line-height: 1.3rem;
-}
-
-form div.input input[type="text"] {
-	width: 98%;
-	padding: 5px 4px;
-	border: 1px solid #d7d7d7;
-}
-
-input[type="radio"], input[type="checkbox"] {margin: 3px 4px 8px 0;}
-
-select {margin-right: 5px;}
-
-#terms_checkbox, .req {margin-bottom: 10px;}
-
-form input.submit {
-	color: #fff;
-	border: none;
- 	background: #1a6f96;
-	padding: 12px 24px;
-	font-size: 14px; font-size: 1.4rem;
-	font-weight: bold;
-	text-align: center;
-	-webkit-appearance:none;
-	margin-top: 10px;
-}
-
-form input.submit:hover {cursor: pointer; background: #000;}
-
-.error {
-	background: #c00;
-	padding: 15px;
-	color: #fff;
-	margin-bottom: 20px;
-  }
-  
-.error span, .error ul {
-	font-size: 12px; font-size: 1.2rem;
-	line-height: 18px; line-height: 1.8rem;
-}
-
-.error ul {
-	padding-top: 15px;
-	margin-left: 15px;
-  }
-  
-.error ul li {
-	margin: 0 0 4px 0;
-}  
+form input.submit {color: #fff; background: #1a6f96;}
+form input.submit:hover {background: #000;}
 	
-/* @end */
-
-/* @group CAPTCHA
-================================================== */
-
-div#recaptcha_widget {
-	border-top: 1px solid #e0e0e0;
-	border-bottom: 1px solid #e0e0e0;
-	padding: 20px 0 0 0;
-	margin-bottom: 20px;
-}
-
-div#recaptcha_widget a {font-size: 11px; font-size: 1.1rem;}
-
-div.captcha {padding-bottom: 24px;}
-
-span.recaptcha_only_if_image, 
-span.recaptcha_only_if_audio {
-	display: block;
-	font-size: 11px; font-size: 1.1rem;
-	margin-bottom: 5px;
-  }
-  
-div.recaptcha_only_if_image {margin: 10px 0;}  
-
-div#recaptcha_image {
-	margin-bottom: 15px;
-	padding-top: 10px;	
-	border: 1px solid #e0e0e0;
-	background: #fff;
-} 
-
-div#recaptcha_image, div#recaptcha_image img {width: 240px !important; height: auto;}
-
-input#recaptcha_response_field {margin: 0 0 20px 0;}
-
 /* @end */
 
 /* @group Polls
 ================================================== */
 
-p.v-results {
-	font-size: 11px; 
-	font-size: 1.1rem;
-	margin-bottom: 15px;
-}
-
-p.v-current {
-	font-weight: bold;
-	text-transform: uppercase;
-	margin-bottom: 15px;
-	font-size: 12px; font-size: 1.2rem;
-	color: #999;
-}
-
-p.v-total {
-	border-top: 1px dotted #ccc;
-	padding-top: 5px;
-	font-size: 12px; font-size: 1.2rem;
-}
-
-.v-tally {
-	font-style: italic;
-	font-size: 11px; font-size: 1.1rem;
-	margin-left: 3px;
-	color: #999;
-}
-
-.vote-so-far {
-	padding: 20px;
-	background: #e3f4fd;
-	margin-bottom: 20px;
-}
-
-#vote_options {
-	font-size: 14px; font-size: 1.4rem;
-	line-height: 20px; line-height: 2.0rem;
-	padding: 20px;
-	background: #e3f4fd;
-	margin-bottom: 20px;
-}
-
-.vote_percentage {
-	margin: 5px 0 15px 0;
-	background-color: #5eb9ed !important;
-}
-
-.v-desc {
-	font-weight: bold;
-	color: #333;
-}
-
-/* @end */
-
-/* @group Clear Fix
-================================================== */
-
-/* Clearing floats: http://www.positioniseverything.net/easyclearing.html  */
-.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
-.c\learfix:after { line-height: 0; }
-.clearfix { display: inline-block; }
-/* Hides from IE-mac \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* End hide from IE-mac */
+.vote_percentage {background-color: #5eb9ed !important;}
 
 /* @end */
 
@@ -295,11 +70,7 @@ p.v-total {
 	body {border-top: 10px solid #126e98;}
 	#wrap {border: 1px solid #e0e0e0; margin: 40px;}
 	.content {padding: 67px 40px 40px 40px;}	
-	div#recaptcha_widget {
-		background: #f2f2f2;
-		border: 1px solid #e0e0e0;
-		padding: 20px 20px 0;
-	}
+	div#recaptcha_widget {background: #f2f2f2; border: 1px solid #e0e0e0; padding: 20px 20px 0;}
 }
 
 @media screen and (min-width: 600px) { /* Fixed width at 600px, and two columns for form elements */
@@ -307,12 +78,5 @@ p.v-total {
 	div.label {width: 48%; float: left;}
 	div.input {width: 48%; float: right;}
 }
-
-/* @end */
-
-/* @group Browser Fixes
-================================================== */
-
-html.ie7 img, html.ie8 img {width: auto !important;}
 
 /* @end */
