@@ -50,6 +50,8 @@ a:hover {text-decoration: none;}
 /* @group Form Elements
 ================================================== */
 
+div.label {margin-bottom: 10px;}
+
 div.label label {
 	font-size: 14px; font-size: 1.4rem;
 	line-height: 16px; line-height: 1.6rem;

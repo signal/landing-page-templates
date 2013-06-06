@@ -44,6 +44,8 @@ body {background: #e1e2e3 url('../resources/graphite.jpg') repeat;}
 
 a {color: #0ba4c0;}	
 
+hr {border-color: #000; margin: 30px 0;}
+
 /* @end */
 
 /* @group Form Elements
@@ -61,6 +63,8 @@ div.label label {
 form input.submit {color: #fff; background: #000;}
 form input.submit:hover {background: #0ba4c0;}
 
+div#recaptcha_widget {background: #f0f0f0; border: 1px solid #e0e0e0; padding: 20px 20px 0;}
+
 /* @end */
 
 /* @group Polls
@@ -74,10 +78,6 @@ p.v-results {clear: both;}
 
 /* @group Media Queries
 ================================================== */
-
-@media screen and (min-width: 430px) {
-	div#recaptcha_widget {background: #f2f2f2; border: 1px solid #e0e0e0; padding: 20px 20px 0;}
-}
 
 @media screen and (min-width: 600px) { /* Fixed width at 600px, and two columns for form elements */
 	#wrap {width: 600px; margin: 60px auto;}

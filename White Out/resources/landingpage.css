@@ -7,6 +7,7 @@ Media: Screen and Responsive
 ==================================================
 	# General Styles
 	# Form Elements
+	# Polls
 	# Media Queries
 */
 
@@ -35,6 +36,8 @@ body {background: #fff;}
 
 a {color: #086596;}	
 
+hr {margin: 30px 0;}
+
 /* @end */
 
 /* @group Form Elements
@@ -50,6 +53,13 @@ div.label label {
 form input.submit {color: #fff; background: #086596;}
 form input.submit:hover {background: #606060;}
 
+
+/* @end */
+
+/* @group Polls
+================================================== */
+
+.vote_percentage {background-color: #086596 !important;}
 
 /* @end */
 

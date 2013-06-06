@@ -22,7 +22,7 @@ body {color: #5b595a; background: #5998ad;}
 
 .header_content {
 	padding-top: 40px;
-	margin: 0 40px 15px 40px;	
+	margin: 0 40px 30px 40px;	
 	border-bottom: 1px solid #e0e0e0;
 	}
 
@@ -56,6 +56,8 @@ div.label label {
 	margin-left: 10px;
 }
 
+div.input {padding-top: 1px;}
+
 form div.input input[type="text"] {padding: 7px 2px;}
 
 #terms_checkbox, .req {padding: 0 40px;}
@@ -68,6 +70,10 @@ form input.submit {
 }
 
 form input.submit:hover {background: #244c59;}
+
+div#recaptcha_widget {margin: 0 40px 20px;}
+
+select {margin-top: 8px;}
 
 /* @end */
 

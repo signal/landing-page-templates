@@ -37,7 +37,7 @@ body {
 	
 .footer_content {
 	border-top: 1px solid #fff;
-	margin-top: 30px; 
+	margin-top: 15px; 
 	padding-top: 30px;
 }
 
@@ -61,6 +61,9 @@ div.input, div.input label {color: #000000;}
 form input.submit {color: #fff; background: #884567;}
 
 form input.submit:hover {background: #662e4a;}
+
+input[type="radio"], input[type="checkbox"] {margin: 3px 8px 8px 9px;}
+#terms_checkbox input[type="checkbox"] {margin: 3px 4px 8px 0;}
 
 /* @end */
 

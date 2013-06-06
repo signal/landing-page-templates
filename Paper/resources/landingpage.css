@@ -40,6 +40,8 @@ body {
 
 a {color: #534832;}	
 
+hr {border-top: 5px solid #af9a79;}
+
 /* @end */
 
 /* @group Form Elements
@@ -57,6 +59,8 @@ form div.input input[type="text"] {background: #dfd1bb; border: none;}
 
 form input.submit {color: #efe5cf; background: #917a56;}
 form input.submit:hover {background: #745f3f;}
+
+div#recaptcha_widget {background: #dfd1bb; padding: 20px 20px 0; border: none;}
 
 /* @end */
 
@@ -77,7 +81,6 @@ p.v-current {color: #9f8761;}
 
 @media screen and (min-width: 430px) {
 	#wrap {margin: 40px;}
-	div#recaptcha_widget {background: #f2f2f2; border: 1px solid #e0e0e0; padding: 20px 20px 0;}
 }
 
 @media screen and (min-width: 600px) { /* Fixed width at 600px, and two columns for form elements */

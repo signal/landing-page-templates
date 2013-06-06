@@ -58,6 +58,7 @@ span {line-height: 1.2em;}
 }
 
 p, img, ul, ol, table {margin-bottom: 15px;}
+p img {margin-bottom: 0;}
 
 a {text-decoration: none;}
 a:hover {text-decoration: underline;}
@@ -86,6 +87,8 @@ table {width: 100% !important;}
 
 /* @group Form Elements
 ================================================== */
+
+input {-webkit-appearance: none; border-radius: 0;}
 
 div.label {margin-bottom: 5px;}
 div.input {margin-bottom: 15px;}
@@ -172,6 +175,10 @@ div#recaptcha_image {
 } 
 
 div#recaptcha_image, div#recaptcha_image img {width: 240px !important; height: auto;}
+
+@media screen and (max-width: 320px) {
+	div#recaptcha_image, div#recaptcha_image img {width: 100% !important;}
+}
 
 input#recaptcha_response_field {margin: 0 0 20px 0;}
 
